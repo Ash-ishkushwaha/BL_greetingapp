@@ -1,4 +1,8 @@
-package com.example.demo.repository;
+package com.example.demo.Repository;
 
-public class GreetingRepository {
+import com.example.demo.DTO.Greeting;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface GreetingRepository extends JpaRepository<Greeting,Long> {
+
 }
